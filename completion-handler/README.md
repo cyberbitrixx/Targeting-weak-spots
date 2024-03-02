@@ -11,13 +11,24 @@ Completion handlers are closures that are called when an asynchronous task finis
 
 <br><br>
 
-## Key Points
-### Playground exercise
+# Closer Look
+## Playground exercise
+This playground demonstrates using completion handlers by starting with a simple function that prints statements asynchronously. It is then refactored to accept a trailing completion closure, allowing additional logic to execute after the main function body. Escaping closures and passing parameters into the completion block are also shown.
 
+### Key points
 1. The issue completion handlers solve (initial synchronous function without a completion block):
    <br><br>
 ![](https://github.com/cyberbitrixx/Targeting-weak-spots/blob/main/assets/completion-handler-playground.gif)
  <br><br>
  
 2. Completion block added and explained (final stage):
-   
+    <br><br>
+![](https://github.com/cyberbitrixx/Targeting-weak-spots/blob/bea8969fe2f3c817d1af841e1343397bcee95072/assets/completion-handlers-playground-2.gif)
+
+ <br><br>
+  <br><br>
+
+## Utilising completion-handlers in a demo-app while simulating an API data request
+
+This app simulates fetching data from an API using a completion handler closure to update the UI after the async request completes. The code is refactored from a synchronous data fetch to use async dispatch queues and completion handlers. The table view is then populated with the data once it is returned.
+
